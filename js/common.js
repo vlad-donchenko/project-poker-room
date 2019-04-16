@@ -11,8 +11,15 @@ $(document).ready(function() {
 
 $("[data-mask='callback-catalog-phone']").mask("+380 99 99 99 999");
 
+
 $(document).ready(function() {
-    $(".main_navbar_list a").click(function() {
+    $(".main_navbar_list  a").click(function() {
+
+
+      $('.burger').removeClass('clicked');
+      $('.overlay').removeClass('show');
+      $('.main_navber').removeClass('show');
+      $('body').removeClass('overflow');
       
       var elementClick = $(this).attr("href")
       var destination = $(elementClick).offset().top;
@@ -34,3 +41,11 @@ $(document).ready(function() {
         }
     });
 });
+
+
+  $('.burger, .overlay').click(function(){
+    $('.burger').toggleClass('clicked');
+    $('.overlay').toggleClass('show');
+    $('.main_navber').toggleClass('show');
+    $('body').toggleClass('overflow');
+  });
