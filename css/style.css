@@ -1797,4 +1797,41 @@ button:focus{
 	.menu_footer:last-child{
 		margin-bottom: 0;
 	}
+	footer h6,
+	.footer_menu_list,
+	.footer_contacts{
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 300px;
+	}
+	.more-about-image-column{
+		display: none;
+	}
+	.s-more-about{
+		padding: 50px 0;
+	}
+	.two_card{
+		margin-top: 40px;
+	}
+	.rating-details{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.rating-details-item{
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.rating-details-item:nth-child(n + 4){
+		margin-top: 30px;
+	}
+	.form_block-wrapper-item-button .btn_green{
+		max-width: 100%;
+		width: 100%;
+		min-width: 100%;
+	}
+}
+@media only screen and (max-width: 409px){
+	.rating-details-item:nth-child(n + 3){
+		margin-top: 30px;
+	}
 }
